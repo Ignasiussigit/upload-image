@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Upload image</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>SELAMAT DATANG
+            <span id="datang"
+                style="text-transform: uppercase; font-weight: bold; border-top: 5px solid lightgreen; border-bottom: 5px solid salmon;"></span>
+        </p>
+        <input type="file" id="file-input" accept="image/png, image/jpeg" onchange="preview()" multiple>
+        <label for="file-input">
+            <i class="fa-solid fa-upload"></i>&nbsp;Pilih foto
+        </label> <br>
+        <p id="num-of-files">tidak ada yang di pilih</p>
+        <div id="images"></div>
+
+        <div class="footer">
+            <small class="anim-text">CopyRight Ignasius &copy; 2022</small>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
